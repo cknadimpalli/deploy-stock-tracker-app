@@ -1,0 +1,32 @@
+<div class="stock-sentiment">
+        <h3>
+            {{ stockName }} ( {{ symbol }} )
+        </h3>
+        <div class="row">
+            <div class="column" *ngFor='let stock of stockSentimentDetails'>
+                <h3>{{ getMonthName(stock.month) | uppercase}}</h3>
+                <p>Change : {{ stock.change }}<br/>
+                    MSPR : {{ stock.mspr }} 
+                    <span *ngIf="stock.change < 0">
+                        <!-- <img [src]="imgDownArrowPath" /> -->
+                        <span class="downArrow">&#11015;</span>
+                    </span>
+                    <span *ngIf="stock.change > 0">
+                        <!-- <img [src]="imgUpArrowPath" /> -->
+                        <span class="upArrow">&#11014;</span>
+                    </span>
+                </p>
+
+                
+            </div>
+        </div>
+        
+    
+    <div class="back-button">
+        <button mat-raised-button [routerLink]="['/']">
+            < Back to list of stocks</button>
+    </div>
+</div>
+
+
+<app-spinner-overlay *ngIf="isLoading" messageTextTranslated="Loading..."></app-spinner-overlay>

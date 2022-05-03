@@ -1,0 +1,28 @@
+.stock-sentiment{
+    border: 5px outset 	#000000;
+    padding: 20px;
+    margin: 25px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 20px;
+  }
+  .downArrow{
+    color:#FF0000;
+    font-size:30px;
+    margin-left: 30px;
+  }
+.upArrow{
+    color:#008000;
+    font-size:30px;
+    margin-left: 30px;
+  }
+

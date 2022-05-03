@@ -1,0 +1,35 @@
+.example-card {
+    max-width: 100%;
+    margin: 25px;
+}
+
+#x {
+    position: relative;
+    float: right;
+    color: #FF0000;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+}
+.column {
+    float: left;
+    width: 30%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .downArrow{
+    color:red;
+    font-size:30px
+  }
+.upArrow{
+    color:green;
+    font-size:30px
+  }
+ul{
+      display: inherit !important;
+  }
